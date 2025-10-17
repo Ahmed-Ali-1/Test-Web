@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@font-face {
+    font-family: myFont;
+    src: url(../font/ITC\ Avant\ Garde\ Gothic\ Std\ Demi.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --primary-bg-color: #FF5349;
+}
+
+.wrapper {
+    background-color: var(--primary-bg-color);
+}
+
+.container_Div {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: palevioletred;
+}
+
+.logoDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.logoDiv img {
+    width: 9rem;
+    padding: 30px 0;
+}
+
+.main_Div {
+    margin-top: 20px;
+    display: flex;
+    gap: 180px;
+    justify-content: space-between;
+}
+
+.content_Div h1 {
+    color: #fafafa;
+    font-family: myFont;
+
+    font-size: 44px;
+}
+
+.content_Div p {
+    padding: 10px 0;
+    color: #fafafa;
+    font-family: "Outfit", sans-serif;
+    font-size: 12px;
+
+}
