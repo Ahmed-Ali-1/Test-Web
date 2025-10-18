@@ -12,6 +12,10 @@
 
 }
 
+body {
+    background-color: #F2F2F2;
+}
+
 :root {
     --primary-bg-color: #FF5349;
 }
@@ -23,7 +27,6 @@
 .container_Div {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: palevioletred;
 }
 
 .logoDiv {
@@ -39,15 +42,20 @@
 .main_Div {
     margin-top: 20px;
     display: flex;
-    gap: 120px;
+    gap: 40px;
     justify-content: space-between;
-    
+
+}
+
+.content_Div {
+    width: 50%;
+    padding: 0 0 180px;
 }
 
 .content_Div h1 {
     color: #fafafa;
     font-family: myFont;
-    font-size: 58px;
+    font-size: 54px;
 }
 
 .content_Div p {
@@ -72,10 +80,85 @@
 }
 
 .right_side {
-    padding: 0 0 0 80px;
+    display: flex;
+    justify-content: right;
     width: 50%;
+    position: relative;
+}
+
+.image_Div {
+    position: absolute;
 }
 
 .image_Div img {
     width: 320px;
+    z-index: 0;
+
+}
+
+.noti1 {
+    background-color: #ffffff;
+    padding: 16px 22px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: -56px;
+    font-size: 14px;
+    color: #1A293C;
+    font-weight: 600;
+    font-family: "Outfit", sans-serif;
+}
+
+.noti2 {
+    background-color: #ffffff;
+    padding: 16px 22px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 120px;
+    right: 4px;
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    color: #1A293C;
+    font-weight: 600;
+}
+
+.card_text {
+    margin: 90px 0 40px;
+    text-align: center;
+}
+
+.card_text h1 {}
+
+.cards_Div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 14px;
+    padding: 18px 40px;
+    box-shadow: 0 0 10px 2px gray;
+    border-radius: 10px;
+
+}
+
+.card h1 {
+    font-size: 18px;
+    color: #1A293C;
+    font-weight: 600;
+    font-family: "Outfit", sans-serif;
+
+}
+
+.card p {
+    font-size: 12px;
+    font-family: "Outfit", sans-serif;
 }
