@@ -21,7 +21,7 @@
 }
 
 .container_Div {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: palevioletred;
 }
@@ -32,28 +32,50 @@
 }
 
 .logoDiv img {
-    width: 9rem;
+    width: 12rem;
     padding: 30px 0;
 }
 
 .main_Div {
     margin-top: 20px;
     display: flex;
-    gap: 180px;
+    gap: 120px;
     justify-content: space-between;
+    
 }
 
 .content_Div h1 {
     color: #fafafa;
     font-family: myFont;
-
-    font-size: 44px;
+    font-size: 58px;
 }
 
 .content_Div p {
-    padding: 10px 0;
+    padding: 16px 0 20px;
     color: #fafafa;
     font-family: "Outfit", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
+}
 
+.content_Div button {
+    background-color: #F2F2F2;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 6px;
+}
+
+.content_Div button a {
+    font-size: 12px;
+    font-family: myFont;
+    color: #FF5349;
+    text-decoration: none;
+}
+
+.right_side {
+    padding: 0 0 0 80px;
+    width: 50%;
+}
+
+.image_Div img {
+    width: 320px;
 }
