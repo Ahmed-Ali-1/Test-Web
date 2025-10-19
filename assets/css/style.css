@@ -25,28 +25,14 @@ body {
 }
 
 .container_Div {
-    max-width: 1300px;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 0 12px;
+    padding: 0 80px;
 }
 
-@media (max-width: 1440px) {
-    .container_Div {
-        max-width: 1140px;
-    }
-}
 
-@media (max-width: 1300px) {
-    .container_Div {
-        max-width: 992px;
-    }
-}
+/* Logo_Section */
 
-@media (max-width: 1100px) {
-    .container_Div {
-        max-width: 840px;
-    }
-}
 
 .logoDiv {
     display: flex;
@@ -58,9 +44,13 @@ body {
     padding: 30px 0 0;
 }
 
+
+/* Hero_Section */
+
+
 .main_Div {
     display: flex;
-    gap: 40px;
+    gap: 16px;
     align-items: center;
     justify-content: space-between;
 
@@ -145,7 +135,12 @@ body {
 }
 
 
-@media (max-width: 992px) {
+
+
+
+@media (max-width: 1050px) {
+
+
     .logoDiv img {
         padding: 30px 0;
     }
@@ -159,7 +154,7 @@ body {
 
     .content_Div {
         width: 100%;
-        padding-bottom: 0;
+        padding-bottom: 40px;
     }
 
     .content_Div h1 {
@@ -180,23 +175,32 @@ body {
         width: 280px;
     }
 
+    .image_Div {
+        bottom: 0;
+    }
+
     .noti1 {
-        top: 10px;
-        left: -20px;
+        top: 26px;
+        left: -30px;
         font-size: 12px;
         padding: 10px 14px;
     }
 
     .noti2 {
-        bottom: 80px;
-        right: -10px;
+        bottom: 106px;
+        right: 6px;
         font-size: 12px;
         padding: 10px 14px;
     }
 }
 
-/* Mobile */
+
 @media (max-width: 576px) {
+
+    .container_Div {
+        padding: 0 40px;
+    }
+
     .logoDiv img {
         width: 9rem;
     }
@@ -214,25 +218,29 @@ body {
     }
 
     .image_Div img {
-        width: 230px;
+        width: 260px;
     }
 
     .noti1 {
-        top: -10px;
-        left: 0;
+        top: 24px;
+        left: -26px;
         font-size: 11px;
         padding: 8px 12px;
     }
 
     .noti2 {
-        bottom: 40px;
-        right: 0;
+        bottom: 98px;
+        right: 6px;
         font-size: 11px;
         padding: 8px 12px;
     }
 }
 
-
+@media (max-width: 400px) {
+    .container_Div {
+        padding: 0 20px;
+    }
+}
 
 
 
