@@ -113,8 +113,8 @@ body {
     text-align: center;
     position: absolute;
     top: 30px;
-    left: -52px;
-    font-size: 14px;
+    left: -60px;
+    font-size: 15px;
     color: #1A293C;
     font-weight: 600;
     font-family: "Outfit", sans-serif;
@@ -127,9 +127,9 @@ body {
     text-align: center;
     position: absolute;
     bottom: 120px;
-    right: 4px;
+    right: 8px;
     font-family: "Outfit", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     color: #1A293C;
     font-weight: 600;
 }
@@ -162,7 +162,7 @@ body {
     }
 
     .content_Div p {
-        font-size: 14px;
+        font-size: 13px;
         padding: 12px 0 18px;
     }
 
@@ -180,17 +180,17 @@ body {
     }
 
     .noti1 {
-        top: 26px;
-        left: -30px;
-        font-size: 12px;
-        padding: 10px 14px;
+        top: 28px;
+        left: -60px;
+        font-size: 14px;
+        padding: 14px 18px;
     }
 
     .noti2 {
         bottom: 106px;
-        right: 6px;
-        font-size: 12px;
-        padding: 10px 14px;
+        right: 4px;
+        font-size: 14px;
+        padding: 14px 18px;
     }
 }
 
@@ -210,7 +210,7 @@ body {
     }
 
     .content_Div p {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .content_Div button {
@@ -218,21 +218,21 @@ body {
     }
 
     .image_Div img {
-        width: 260px;
+        width: 240px;
     }
 
     .noti1 {
         top: 24px;
-        left: -26px;
+        left: -38px;
         font-size: 11px;
-        padding: 8px 12px;
+        padding: 10px 14px;
     }
 
     .noti2 {
-        bottom: 98px;
-        right: 6px;
+        bottom: 90px;
+        right: 12px;
         font-size: 11px;
-        padding: 8px 12px;
+        padding: 10px 14px;
     }
 }
 
@@ -244,6 +244,7 @@ body {
 
 
 
+/* Card_Section */
 
 .card_text {
     margin: 90px 0 40px;
@@ -268,7 +269,7 @@ body {
 
 .cards_Div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 40px;
 
 }
@@ -311,8 +312,18 @@ body {
 
 
 
+@media (max-width: 1260px) {
+    .cards_Div {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
+}
 
+@media (max-width: 880px) {
+    .cards_Div {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 @media (max-width: 992px) {
     .card_text h1 {
@@ -341,8 +352,9 @@ body {
     }
 }
 
-/* Mobiles (under 600px) */
-@media (max-width: 600px) {
+
+
+@media (max-width: 640px) {
     .card_text {
         margin: 60px 0 30px;
     }
@@ -353,13 +365,12 @@ body {
     }
 
     .card_text p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .cards_Div {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 0 12px;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
     }
 
     .card {
@@ -377,11 +388,26 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+
+    .card_text h1 {
+        font-size: 24px;
+    }
+
+    .card_text p {
+        font-size: 12px;
+    }
+
+
+    .cards_Div {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
 
 
 
-
-
+/* Click_Section */
 
 .Click-section {
     margin-top: 80px;
@@ -403,6 +429,7 @@ body {
     border-radius: 50%;
     padding: 0 20px;
     display: flex;
+    position: relative;
 }
 
 .mobile_image .imageDiv1 img {
@@ -415,9 +442,9 @@ body {
 
 .mobile_image .imageDiv2 img {
     width: 320px;
-    position: relative;
+    position: absolute;
     top: -56px;
-    left: -164px;
+    left: 96px;
     z-index: 1;
 }
 
@@ -473,6 +500,10 @@ body {
 
 
 @media (max-width: 992px) {
+    .Click-section {
+        margin-top: 100px;
+    }
+
     .two_coloum {
         flex-direction: column;
         align-items: center;
@@ -481,72 +512,87 @@ body {
     }
 
     .mobile_image {
-        width: 260px;
+        width: 290px;
         height: 290px;
         margin-bottom: 20px;
     }
 
     .mobile_image .imageDiv1 img {
-        width: 200px;
-        top: -10px;
-        left: -50px;
+        width: 220px;
+        top: -32px;
+        left: -48px;
     }
 
     .mobile_image .imageDiv2 img {
-        width: 260px;
-        top: -40px;
-        left: -144px;
+        width: 280px;
+        top: -54px;
+        left: 88px;
     }
 
     .right_coloum {
         width: 100%;
-        padding: 0 40px;
+        padding: 0;
     }
 
     .right_coloum h1 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .right_coloum p {
         font-size: 13px;
     }
+
+    .right_coloum>h1>br {
+        display: none;
+    }
 }
 
-/* --- Mobile Devices --- */
-@media (max-width: 576px) {
+@media (max-width: 810px) {
+    .right_coloum>h1>br {
+        display: none;
+    }
+
+    .right_coloum h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 648px) {
+    .two_coloum {
+        gap: 40px;
+    }
+
     .Click-section {
-        margin-top: 60px;
+        margin-top: 100px;
     }
 
     .mobile_image {
-        width: 200px;
-        height: 230px;
+        width: 240px;
+        height: 240px;
     }
 
     .mobile_image .imageDiv1 img {
-        width: 160px;
-        top: -0px;
-        left: -56px;
-    }
-
-    .mobile_image .imageDiv2 {
-        width: 0;
+        width: 180px;
+        top: -32px;
+        left: -48px;
     }
 
     .mobile_image .imageDiv2 img {
-        width: 200px;
-        top: -40px;
-        left: -124px;
+        width: 240px;
+        top: -60px;
+        left: 66px;
     }
 
     .right_coloum {
-        padding: 0 20px;
         gap: 16px;
     }
 
     .right_coloum h1 {
-        font-size: 26px;
-        letter-spacing: -1px;
+        font-size: 24px;
+    }
+
+    .right_coloum>h1>br {
+        display: none;
     }
 
     .right_coloum p {
@@ -567,11 +613,38 @@ body {
     }
 }
 
+@media (max-width: 400px) {
+    .two_coloum {
+        gap: 40px;
+    }
+
+    .Click-section {
+        margin-top: 100px;
+    }
+
+    .mobile_image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .mobile_image .imageDiv1 img {
+        width: 150px;
+        top: -28px;
+        left: -44px;
+    }
+
+    .mobile_image .imageDiv2 img {
+        width: 200px;
+        top: -50px;
+        left: 56px;
+    }
+
+
+}
 
 
 
-
-
+/* App_Section */
 
 .app_Div {
     margin-top: 80px;
@@ -617,9 +690,12 @@ body {
 }
 
 .app_card_DIv {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    text-align: center;
+    text-align: center; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
     gap: 20px;
 }
 
@@ -647,7 +723,7 @@ body {
     font-family: myFont;
     font-weight: 600;
     color: #222222;
-    font-size: 8px;
+    font-size: 10px;
 }
 
 .app_cards:hover {
@@ -664,12 +740,13 @@ body {
 
 @media (max-width: 992px) {
     .app_Div h1 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .app_Div>p {
-        font-size: 13px;
+        /* font-size: 13px; */
         max-width: 500px;
+        text-align: center;
     }
 
     .number_Div span {
@@ -687,8 +764,8 @@ body {
     }
 }
 
-/* --- Mobile View --- */
-@media (max-width: 576px) {
+/*
+@media (max-width: 860px) {
     .app_Div {
         margin-top: 60px;
         margin-bottom: 60px;
@@ -736,7 +813,7 @@ body {
     .app_cards p {
         font-size: 12px;
     }
-}
+} */
 
 
 
