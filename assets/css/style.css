@@ -472,6 +472,9 @@ body {
 
 .right_card {
     padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
     border-radius: 10px;
     box-shadow:
         4px 4px 4px -1px rgba(0, 0, 0, 0.1),
@@ -487,10 +490,10 @@ body {
 }
 
 .right_card h4 {
-    font-size: 15px;
+    font-size: 16px;
     color: #222222;
     font-weight: 600;
-    font-family: "Outfit", sans-serif;
+    font-family: myFont;
     letter-spacing: -1px;
 }
 
@@ -648,11 +651,9 @@ body {
 
 .app_Div {
     margin-top: 80px;
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    display: grid;
+    text-align: center;
+    gap: 24px;
 }
 
 .app_Div h1 {
@@ -670,7 +671,7 @@ body {
 
 .number_Div {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 }
@@ -678,7 +679,7 @@ body {
 .number_Div p {
     font-family: "Outfit";
     font-weight: 600;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 
@@ -690,12 +691,9 @@ body {
 }
 
 .app_card_DIv {
-    /* display: flex;
-    justify-content: space-between;
-    text-align: center; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
+    text-align: center;
     gap: 20px;
 }
 
@@ -712,7 +710,7 @@ body {
 }
 
 .app_cards h4 {
-    font-size: 14px;
+    font-size: 16px;
     color: #222222;
     font-weight: 600;
     font-family: myFont;
@@ -733,24 +731,13 @@ body {
     transform: translateY(-3px);
 }
 
-
-
-
-
-
 @media (max-width: 992px) {
     .app_Div h1 {
         font-size: 32px;
     }
 
-    .app_Div>p {
-        /* font-size: 13px; */
-        max-width: 500px;
-        text-align: center;
-    }
-
     .number_Div span {
-        width: 150px;
+        width: 180px;
     }
 
     .app_card_DIv {
@@ -762,66 +749,57 @@ body {
         flex: 1 1 45%;
         min-width: 220px;
     }
+
+    .app_card_DIv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
 }
 
-/*
-@media (max-width: 860px) {
-    .app_Div {
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-
+@media (max-width: 769px) {
     .app_Div h1 {
         font-size: 24px;
         letter-spacing: -1px;
     }
 
-    .app_Div>p {
-        font-size: 12px;
-        max-width: 90%;
+    .number_Div span {
+        width: 120px;
     }
 
     .number_Div {
-        flex-direction: row;
-        justify-content: center;
         gap: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .app_card_DIv {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .number_Div p {
-        font-size: 16px;
+        font-family: "Outfit";
+        font-weight: 600;
+        font-size: 24px;
     }
 
     .number_Div span {
         width: 80px;
     }
 
-    .app_card_DIv {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+    .number_Div p {
+        font-size: 22px;
     }
 
-    .app_cards {
-        width: 90%;
-        padding: 20px 18px;
-    }
-
-    .app_cards h4 {
-        font-size: 14px;
-    }
-
-    .app_cards p {
-        font-size: 12px;
-    }
-} */
+}
 
 
-
-
-
+/* User_Section */
 
 .users_card_text {
-    margin: 90px 0 40px;
+    margin: 100px 0 40px;
     text-align: center;
 }
 
@@ -836,7 +814,7 @@ body {
 
 .users_cards_Div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 20px;
 
 }
@@ -851,7 +829,7 @@ body {
         4px 4px 4px -1px rgba(0, 0, 0, 0.1),
         -4px -4px 4px -1px rgba(255, 255, 255, 0.9);
     transition: all 0.3s ease;
-    border-radius: 12px;
+    border-radius: 20px;
 
 }
 
@@ -868,7 +846,7 @@ body {
 
 
 .users_card p {
-    font-size: 12px;
+    font-size: 14px;
     font-family: "Outfit", sans-serif;
 }
 
@@ -879,13 +857,15 @@ body {
 
 .users_Div img {
     width: 30px;
+    height: 30px;
 }
 
 .users_Div h4 {
-    font-size: 14px;
+    font-size: 12px;
     color: #212121;
     font-weight: 600;
     font-family: myFont;
+    margin-bottom: 2px;
 }
 
 .users_Div p {
@@ -895,45 +875,38 @@ body {
 }
 
 
-@media (max-width: 600px) {
-    .users_card_text {
-        margin: 60px 0 30px;
-    }
-
-    .users_card_text h1 {
-        font-size: 24px;
-        letter-spacing: -1px;
-    }
-
+@media (max-width: 1280px) {
     .users_cards_Div {
-        grid-template-columns: 1fr;
-        gap: 18px;
-        padding: 0 12px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+
     }
 
-    .users_card {
-        padding: 16px;
-        gap: 10px;
-    }
+}
 
-    .users_card img:first-child {
-        width: 50px;
+@media (max-width: 872px) {
+    .users_cards_Div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
     }
 
     .users_card p {
-        font-size: 12px;
-        line-height: 1.4;
-    }
-
-    .users_Div img {
-        width: 30px;
-    }
-
-    .users_Div h4 {
         font-size: 13px;
     }
 
-    .users_Div p {
-        font-size: 11px;
+    .users_card>img {
+        width: 90px;
     }
+
+
+}
+
+@media (max-width: 620px) {
+    .users_cards_Div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
 }
