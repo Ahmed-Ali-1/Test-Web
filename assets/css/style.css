@@ -14,7 +14,6 @@
 
 body {
     background-color: #F2F2F2;
-    /* overflow-x: hidden; */
 }
 
 :root {
@@ -31,9 +30,7 @@ body {
     padding: 0 80px;
 }
 
-
 /* Logo_Section */
-
 
 .logoDiv {
     display: flex;
@@ -45,9 +42,7 @@ body {
     padding: 30px 0 0;
 }
 
-
 /* Hero_Section */
-
 
 .main_Div {
     display: flex;
@@ -139,8 +134,6 @@ body {
     z-index: 1;
 }
 
-
-
 @media (max-width: 1050px) {
     .content_Div h1 {
         color: #fafafa;
@@ -205,7 +198,6 @@ body {
     }
 }
 
-
 @media (max-width: 576px) {
 
     .container_Div {
@@ -253,7 +245,6 @@ body {
     }
 }
 
-
 /* Card_Section */
 
 .card_text {
@@ -283,7 +274,6 @@ body {
     gap: 40px;
 
 }
-
 
 .card {
     display: flex;
@@ -319,8 +309,6 @@ body {
     font-size: 12px;
     font-family: "Outfit", sans-serif;
 }
-
-
 
 @media (max-width: 1260px) {
     .cards_Div {
@@ -361,8 +349,6 @@ body {
         font-size: 12px;
     }
 }
-
-
 
 @media (max-width: 640px) {
     .card_text {
@@ -414,8 +400,6 @@ body {
         gap: 20px;
     }
 }
-
-
 
 /* Click_Section */
 
@@ -648,7 +632,6 @@ body {
     }
 }
 
-
 /* App_Section */
 
 .app_Div {
@@ -799,13 +782,11 @@ body {
 
 /* Reason-Section */
 
-
 .red_wrapper {
     max-width: 1500px;
     margin: 80px auto 0;
     padding: 0 60px;
 }
-
 
 .container {
     background-color: var(--primary-bg-color);
@@ -845,8 +826,6 @@ body {
     display: flex;
     align-items: flex-end;
     gap: 10px;
-
-
 }
 
 .phone_mockup {
@@ -1007,8 +986,6 @@ body {
     }
 }
 
-
-
 /* User_Section */
 
 .users_card_text {
@@ -1031,7 +1008,6 @@ body {
     gap: 20px;
 
 }
-
 
 .users_card {
     display: flex;
@@ -1152,7 +1128,6 @@ body {
 
 }
 
-
 /* Download_Section */
 
 .container_two {
@@ -1242,10 +1217,6 @@ body {
 .google_Div img {
     width: 22px;
 }
-
-
-
-
 
 @media (max-width: 1210px) {
     .phone_mockup.small {
