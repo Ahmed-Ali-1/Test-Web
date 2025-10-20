@@ -83,69 +83,131 @@ gsap.from(".cards_Div .card", {
 // Click_Section
 
 
+// gsap.from(".mobile_image", {
+//     scrollTrigger: {
+//         trigger: ".Click-section",
+//         start: "top 80%",
+//         scroller: "body",
+//         scrub: 3,
+//         toggleActions: "play none none reverse",
+//         end: "bottom 80%",
+//     },
+//     opacity: 0,
+//     y: 60,
+//     rotate: 12,
+//     duration: 0.1,
+//     ease: "power3.out"
+// });
+
+// gsap.from(".right_coloum h1", {
+//     scrollTrigger: {
+//         trigger: ".Click-section",
+//         start: "top 75%",
+//         toggleActions: "play none none reverse",
+//         scroller: "body",
+//         scrub: 2
+
+//     },
+//     opacity: 0,
+//     x: 100,
+//     duration: 0.5,
+//     ease: "power3.out"
+// });
+
+// gsap.from(".right_coloum > p", {
+//     scrollTrigger: {
+//         trigger: ".Click-section",
+//         start: "top 70%",
+//         toggleActions: "play none none reverse",
+//         scroller: "body",
+//         scrub: 2,
+
+
+//     },
+//     opacity: 0,
+//     x: 80,
+//     duration: 0.5,
+//     ease: "power3.out"
+// });
+
+// gsap.utils.toArray(".right_card").forEach((card, i) => {
+//     gsap.from(card, {
+//         scrollTrigger: {
+//             trigger: card,
+//             start: "top 95%",
+//             toggleActions: "play none none reverse", scroller: "body",
+//             scrub: 2
+//         },
+//         opacity: 0,
+//         y: 40,
+//         scale: 0.9,
+//         duration: 0.2,
+//         delay: i * 0,
+//         ease: "back.out(1.7)"
+//     });
+// });
+
+
+
+
+// 👇 Mobile Image Animation
 gsap.from(".mobile_image", {
     scrollTrigger: {
         trigger: ".Click-section",
         start: "top 80%",
-        scroller: "body",
-        scrub: 3,
         toggleActions: "play none none reverse",
-        end: "bottom 80%",
     },
     opacity: 0,
     y: 60,
     rotate: 12,
-    duration: 0.1,
-    ease: "power3.out"
+    duration: 1.2,
+    ease: "back.out(1.7)"
 });
 
+// 👇 Heading Animation
 gsap.from(".right_coloum h1", {
     scrollTrigger: {
         trigger: ".Click-section",
         start: "top 75%",
         toggleActions: "play none none reverse",
-        scroller: "body",
-        scrub: 2
-
     },
     opacity: 0,
     x: 100,
-    duration: 0.5,
+    duration: 1,
     ease: "power3.out"
 });
 
+// 👇 Paragraph Animation
 gsap.from(".right_coloum > p", {
     scrollTrigger: {
         trigger: ".Click-section",
         start: "top 70%",
         toggleActions: "play none none reverse",
-        scroller: "body",
-        scrub: 2,
-
-
     },
     opacity: 0,
     x: 80,
-    duration: 0.5,
-    ease: "power3.out"
+    duration: 1,
+    ease: "power3.out",
+    delay: 0.1
 });
 
+// 👇 Each Card Animation (staggered)
 gsap.utils.toArray(".right_card").forEach((card, i) => {
     gsap.from(card, {
         scrollTrigger: {
             trigger: card,
             start: "top 95%",
-            toggleActions: "play none none reverse", scroller: "body",
-            scrub: 2
+            toggleActions: "play none none reverse",
         },
         opacity: 0,
         y: 40,
         scale: 0.9,
-        duration: 0.2,
-        delay: i * 0,
+        duration: 0.8,
+        delay: i * 0.15,
         ease: "back.out(1.7)"
     });
 });
+
 
 
 // App_Sction
@@ -211,35 +273,69 @@ gsap.from(".reason_text > *", {
     stagger: 0.4
 });
 
-gsap.from(".phone_mockup.small", {
+// gsap.from(".phone_mockup.small", {
+//     scrollTrigger: {
+//         trigger: ".reason_image",
+//         scrub: 2,
+//         start: "top 80%",
+//         end: "bottom 70%",
+//         toggleActions: "play none none reverse",
+//     },
+//     x: -40,
+//     rotate: -10,
+//     opacity: 0,
+//     duration: 2,
+//     ease: "back.out(1.7)"
+// });
+
+// gsap.from(".phone_mockup.large", {
+//     scrollTrigger: {
+//         trigger: ".reason_image",
+//         start: "top 85%",
+//         end: "bottom 70%",
+//         scrub: 2,
+//         toggleActions: "play none none reverse",
+//     },
+//     x: 40,
+//     rotate: 10,
+//     opacity: 0,
+//     duration: 2,
+//     ease: "back.out(1.7)",
+// });
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Small Phone Animation
+gsap.from(".reason-section .phone_mockup.small", {
     scrollTrigger: {
-        trigger: ".reason_image",
-        scrub: 2,
-        start: "top 80%",
-        end: "bottom 70%",
+        trigger: ".reason-section",
+        start: "top 75%",
         toggleActions: "play none none reverse",
     },
-    x: -10,
-    rotate: -8,
     opacity: 0,
-    duration: 2,
+    y: 80,
+    scale: 0.8,
+    rotate: -8,
+    duration: 1.4,
     ease: "back.out(1.7)"
 });
 
-gsap.from(".phone_mockup.large", {
+// Large Phone Animation
+gsap.from(".reason-section .phone_mockup.large", {
     scrollTrigger: {
-        trigger: ".reason_image",
-        start: "top 85%",
-        end: "bottom 70%",
-        scrub: 2,
+        trigger: ".reason-section",
+        start: "top 75%",
         toggleActions: "play none none reverse",
     },
-    x: 40,
-    rotate: 10,
     opacity: 0,
-    duration: 2,
+    y: 80,
+    scale: 0.8,
+    rotate: 8,
+    duration: 1.4,
     ease: "back.out(1.7)",
+    delay: 0.2
 });
+
 
 
 
@@ -291,6 +387,10 @@ gsap.from(".download_Div", {
 
 
 
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Small Phone Animation
 gsap.from(".reason_image .phone_mockup.small", {
     scrollTrigger: {
         trigger: ".download-section",
@@ -298,12 +398,14 @@ gsap.from(".reason_image .phone_mockup.small", {
         toggleActions: "play none none reverse",
     },
     opacity: 0,
-    x: -100,
-    rotate: -10,
-    duration: 1.2,
-    ease: "power3.out"
+    y: 80,
+    scale: 0.8,
+    rotate: -8,
+    duration: 1.4,
+    ease: "back.out(1.7)"
 });
 
+// Large Phone Animation
 gsap.from(".reason_image .phone_mockup.large", {
     scrollTrigger: {
         trigger: ".download-section",
@@ -311,12 +413,44 @@ gsap.from(".reason_image .phone_mockup.large", {
         toggleActions: "play none none reverse",
     },
     opacity: 0,
-    x: 100,
-    rotate: 10,
-    duration: 1.2,
-    ease: "power3.out",
+    y: 80,
+    scale: 0.8,
+    rotate: 8,
+    duration: 1.4,
+    ease: "back.out(1.7)",
     delay: 0.2
 });
+
+
+
+
+
+// gsap.from(".reason_image .phone_mockup.small", {
+//     scrollTrigger: {
+//         trigger: ".download-section",
+//         start: "top 75%",
+//         toggleActions: "play none none reverse",
+//     },
+//     opacity: 0,
+//     x: -100,
+//     rotate: -10,
+//     duration: 1.2,
+//     ease: "power3.out"
+// });
+
+// gsap.from(".reason_image .phone_mockup.large", {
+//     scrollTrigger: {
+//         trigger: ".download-section",
+//         start: "top 75%",
+//         toggleActions: "play none none reverse",
+//     },
+//     opacity: 0,
+//     x: 100,
+//     rotate: 10,
+//     duration: 1.2,
+//     ease: "power3.out",
+//     delay: 0.2
+// });
 
 gsap.from(".store_Div > div", {
     scrollTrigger: {
