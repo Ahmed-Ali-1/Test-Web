@@ -1176,11 +1176,21 @@ body {
     align-items: center;
 }
 
-.apple_Div,
-.google_Div {
+
+.apple_Div {
     display: flex;
     align-items: center;
     gap: 4px;
+    background-color: #ffffff;
+    border-radius: 26px;
+    padding: 8px 14px 8px 12px;
+
+}
+
+.google_Div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     background-color: #ffffff;
     border-radius: 26px;
     padding: 8px 14px 8px 12px;
@@ -1328,8 +1338,33 @@ body {
     }
 
     .store_Div {
-        flex-direction: column;
         gap: 10px;
+    }
+
+    .apple_Div p,
+    .google_text p {
+        color: #000000;
+        font-size: 4px;
+        font-family: "Outfit", sans-serif;
+        letter-spacing: 1px;
+
+    }
+
+    .apple_Div h4,
+    .google_text h4 {
+        color: #000000;
+        font-size: 8px;
+        letter-spacing: 0.5px;
+        font-family: myFont;
+
+    }
+
+    .google_Div img {
+        width: 14px;
+    }
+
+    .apple_Div i {
+        font-size: 18px;
     }
 
     .phone_mockup.small {
