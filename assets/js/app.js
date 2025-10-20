@@ -194,6 +194,7 @@ gsap.from(".reason-section .phone_mockup.small", {
     scrollTrigger: {
         trigger: ".reason-section",
         start: "top 75%",
+        scrub: 2,
         toggleActions: "play none none reverse",
     },
     opacity: 0,
@@ -209,6 +210,7 @@ gsap.from(".reason-section .phone_mockup.large", {
         trigger: ".reason-section",
         start: "top 75%",
         toggleActions: "play none none reverse",
+        scrub: 2,
     },
     opacity: 0,
     y: 80,
