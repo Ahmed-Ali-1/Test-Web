@@ -80,7 +80,6 @@ gsap.from(".mobile_image", {
     scrollTrigger: {
         trigger: ".Click-section",
         start: "top 95%",
-        markers: true,
         scrub: 2,
         toggleActions: "play none none reverse",
     },
