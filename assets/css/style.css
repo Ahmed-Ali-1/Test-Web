@@ -14,6 +14,7 @@
 
 body {
     background-color: #F2F2F2;
+    /* overflow-x: hidden; */
 }
 
 :root {
@@ -858,11 +859,14 @@ body {
 
 .phone_mockup.small {
     width: 220px;
+    overflow: hidden;
 
 }
 
 .phone_mockup.large {
     width: 240px;
+    overflow: hidden;
+
 }
 
 @media (max-width: 1210px) {
@@ -1183,7 +1187,8 @@ body {
     gap: 4px;
     background-color: #ffffff;
     border-radius: 26px;
-    padding: 8px 14px 8px 12px;
+    padding: 8px 14px 8px 10px;
+    cursor: pointer;
 
 }
 
@@ -1194,7 +1199,14 @@ body {
     background-color: #ffffff;
     border-radius: 26px;
     padding: 8px 14px 8px 12px;
+    cursor: pointer;
 
+}
+
+.apple_Div:hover,
+.google_Div:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .apple_Div i {
@@ -1228,8 +1240,10 @@ body {
 }
 
 .google_Div img {
-    width: 18px;
+    width: 22px;
 }
+
+
 
 
 
@@ -1338,13 +1352,15 @@ body {
     }
 
     .store_Div {
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
     }
 
     .apple_Div p,
     .google_text p {
         color: #000000;
-        font-size: 4px;
+        font-size: 6px;
         font-family: "Outfit", sans-serif;
         letter-spacing: 1px;
 
@@ -1353,14 +1369,14 @@ body {
     .apple_Div h4,
     .google_text h4 {
         color: #000000;
-        font-size: 8px;
+        font-size: 10px;
         letter-spacing: 0.5px;
         font-family: myFont;
 
     }
 
     .google_Div img {
-        width: 14px;
+        width: 18px;
     }
 
     .apple_Div i {
